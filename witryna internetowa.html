@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    position: relative; 
+  }
+  .section{
+      padding-top: 50px;
+  }
+  .container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      width: 100%;
+     height:800px;
+     background-color: darkorange;
+      text-align: center;
+      align-content: center;
+  }
+  form{
+padding-top: 50px;
+padding-left: 30px;
+padding-right: 30px;
+padding-bottom: 50px;
+border-color: black;
+border-style: solid;
+background-color: rgb(30, 80, 230);
+  }
+  .container1{
+ 
+      text-align: center;
+      padding-top: 200px;
+    padding-bottom: 50px;
+    height:800px;
+  }
+  .panel-group {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      height: 500px;
+      background-color: rgb(119, 221, 98);
+
+  }
+  .panel-body {
+      background-color:rgb(139, 243, 70);
+  }
+ 
+  .breadcrumb{
+      padding-top: 40px;
+      
+      height: 200px;
+      background-color: rgb(77, 175, 175);
+      text-align: center;
+  }
+  .modal-dialog {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.modal-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: turquoise;
+
+}
+.modal-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  padding: 10px;
+
+  border: 0;
+}
+.modal-body {
+  position: absolute;
+  top: 50px;
+  bottom: 60px;
+  width: 100%;
+  font-weight: 300;
+  overflow: auto;
+}
+.modal-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  padding: 10px;
+}
+.ModalneOkno{
+    height: 700px;
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 50px;
+    background-color: thistle;
+}
+.tooltips{
+    height: 700px;
+padding-top: 300px;
+padding-bottom: 50px;
+background-color: tomato;
+text-align: center;
+}
+.body-tooltip{
+    background-color: whitesmoke;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+   
+}
+ </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="padding-top: 50px;" >
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Serwis Internetowy</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li><a href="#crumb">Nawigacja okruszkowa</a></li>
+            <li><a href="#myCarousel">Element Karuzela</a></li>
+            <li><a href="#accordion">Element Akordeon</a></li>
+            <li><a href="#formularz">Przykładowy Formularz</a></li>
+            <li><a href="#modalne">Przykładowe Modalne Okno</a></li>
+            <li><a href="#Tooltip">Element Tooltip</a></li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<div >
+     
+<ol class="breadcrumb" id="crumb" >
+    <h1 >Nawigacja Okruszkowa</h1> 
+    <li class="breadcrumb-item"><a href="#">Serwis Internetowy</a></li>
+    <li class="breadcrumb-item"><a href="#crumb">Nawigacja okruszkowa</a></li>
+    <li class="breadcrumb-item"><a href="#myCarousel">Element Karuzela</a></li>
+    <li class="breadcrumb-item"><a href="#accordion">Element Akordeon</a></li>
+    <li class="breadcrumb-item"><a href="#formularz">Przykładowy Formularz</a></li>
+    <li class="breadcrumb-item"><a href="#modalne">Okno modalne</a></li>
+</ol>
+</div> 
+<div class="container">
+    <h2>Element Karuzela</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      
+      <div class="carousel-inner" style=" width:60%; margin-left: 20%; margin-right: 20%;" >
+  
+        <div class="item active">
+          <img src="https://desenio.pl/bilder/artiklar/zoom/3299_1.jpg" alt="Los Angeles" style="width:100%;height: 550px;">
+          <div class="carousel-caption">
+            <h3>Los Angeles</h3>
+            <p>Miasto Aniołów</p>
+          </div>
+        </div>
+  
+        <div class="item">
+          <img src="https://www.forumdaily.com/wp-content/uploads/2017/05/Depositphotos_11011615_m-2015.jpg" alt="Chicago" style="width:100%;height: 550px;">
+          <div class="carousel-caption">
+            <h3>Chicago</h3>
+            <p>Wietrzne Miasto z Niesamowitymi Widokami</p>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="https://reloadvisor.org/wp-content/uploads/2019/10/NY-ReloAdvisor.org_.jpg" alt="New York" style="width:100%;height: 550px;">
+          <div class="carousel-caption">
+            <h3>New York</h3>
+            <p>Big Apple!</p>
+          </div>
+        </div>
+    
+      </div>
+  
+      
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="panel-group" id="accordion">
+  <h1 style="text-align: center;">Element Akordeon</h1>
+    <div class="panel panel-default">
+    
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Los Angeles</a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+       
+        <div class="panel-body">
+          <p>Los Angeles znane także jako Miasto Aniołów leży w stanie Kalifornia i jest jego najbardziej zaludnionym obszarem. Zwiedzisz tu m.in. Hollywood, Beverly Hills, Venice Beach i obserwatorium Griffitha. Ale najpierw odczekasz swoje w korkach.
+
+            Los Angeles to miasto autostrad i korków. Mówią na nie Miasto Aniołów, ale dla mnie to Los Korkos i Los Autostrados. Wielopasmowe autostrady przecinają całą metropolię, ale ani trochę nie pomagają nigdzie dojechać. Korki właściwie się tu nie kończą, więc można w nich stać także w nocy.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+    
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Chicago</a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+      
+        <div class="panel-body">
+          <p>Chicago jest to miasto położone nad jeziorem Michigan w stanie Illinois w Stanach Zjednoczonych. Zajmuje powierzchnią ok. 606 km². Liczba ludności miasta wynosi ok. 2,9 mln osób, a całej aglomeracji miejskiej ok. 9,3 mln. Średnia gęstość zaludnienia to 4,9 tys. os/km². Chicago jest wielkim ośrodkiem finansowo-handlowym, przemysłowym oraz kulturalno-naukowym. Koncentruje się w nim przemysł metalurgiczny, elektromaszynowy, maszynowy, chemiczny, samochodowy i mięsny. Mieści się tu także siedem uniwersytetów, a także liczne instytuty naukowe, biblioteki, muzea i galerie. Stanowi ponadto bardzo ważny węzeł komunikacyjny. Znajduje się tu najważniejszy zespół portowy Wielkich Jezior oraz drugi port lotniczy świata - O'Hare. Chicago jest ponadto największym węzłem kolejowym półkuli zachodniej. Miasto jest największym na świecie skupiskiem Polonii, a także siedzibą władz Kongresu Polonii Amerykańskiej, Związku Narodowego Polskiego i innych polonijnych organizacji. Mieszka w nim ponad 1,3 mln ludności polskiego pochodzenia.
+
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+ 
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Nowy Jork</a>
+        </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse">
+
+        <div class="panel-body">
+          <p>Nowy Jork został założony w 1624 roku jako kolonia Holenderska o nazwie Nowy Amsterdam, dopiero pod władzą Anglików w 1664 roku otrzymał obecną nazwę. W XVIII wieku Nowy Jork stopniowo zyskiwał na znaczeniu handlowym, a przeprowadzony tam proces Zengera wpłynął na rozwój regulacji prawnych związanych z wolnością prasy, a następnie zasad demokratycznych. W latach 1775–1783 odbyła się wojna o niepodległość USA, a jako ukoronowanie zwycięstwa między 1884 a 1886 rokiem wzniesiono w Nowym Jorku Statuę Wolności.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form id="formularz">
+      <h1 style="text-align: center;">Przykładowy formularz</h1>
+    <div class="form-group col-md">
+        <label for="przykladowyEmail">Email</label>
+        <input type="email" class="form-control" id="przykladowyEmail" placeholder="Email">
+    </div>
+    <div class="form-row">  
+    <div class="form-group col-md-6">
+        <label for="przykladoweImie">Imię</label>
+        <input type="text" class="form-control" id="przykladoweImie" placeholder="Podaj imię">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="przykladoweNazwisko">Nazwisko</label>
+        <input type="text" class="form-control" id="przykladoweNazwisko" placeholder="Podaj nazwisko">
+      </div>
+    </div>
+    <div class="form-group col-md">
+        <label for="przykladowyNumer">Nr telefonu</label>
+        <input type="number" class="form-control" id="przykladowyNumer" placeholder="Podaj numer telefonu">
+    </div>
+    <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="przykladowaUlica">Ulica</label>
+      <input type="text" class="form-control" id="przykladowaUlica" placeholder="Podaj ulicę">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="przykladowyNumerDomu">Nr domu/mieszkania</label>
+      <input type="text" class="form-control" id="przykladowyNumerDomu" placeholder="Podaj numer domu/mieszkania">
+    </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="przykladowaMiejscowosc">Miejscowość</label>
+        <input type="text" class="form-control" id="przykladowaMiejscowosc" placeholder="Podaj miejscowość">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="przykladoweWojewodztwo">Województwo</label>
+        <input type="text" class="form-control" id="przykladoweWojewodztwo" placeholder="Podaj województwo">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="przykladowyKodPocztowy">Kod pocztowy</label>
+        <input type="text" class="form-control" id="przykladowyKodPocztowy" placeholder="Podaj kod pocztowy">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Prześlij</button>
+    <button type="reset"  class="btn btn-danger">Resetuj</button>
+  </form>
+<div id="modalne" class="ModalneOkno">
+    <h1>Przykładowe Modalne Okno</h1>
+  <button class="btn btn-warning btn-modal"
+  data-toggle="modal"
+  data-target="#ModalWindow">
+Otwórz
+</button>
+<div id="ModalWindow"
+class="modal animated bounceIn"
+tabindex="-1"
+role="dialog"
+aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+  <h1 id="myModalLabel"
+      class="modal-title">
+    Have A Nice Day!
+  </h1>
+</div>
+<div class="modal-body">
+    <img src="https://cdn.wallpapersafari.com/15/74/iHuBGb.jpg" alt="Have a nice day" height="100%";width="100%">
+ </div>
+<div class="modal-footer">
+  <button class="btn btn-danger"
+          data-dismiss="modal">
+    close
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tooltips" id="Tooltip">
+    <h1>Przykładowe Wykorzystanie Tooltipów</h1>
+    
+   <div class="body-tooltip"> 
+    <p>
+    Ameryka – część świata położona na zachodniej półkuli Ziemi, w skład której wchodzą dwa kontynenty: <a href="#" data-toggle="tooltip" data-placement="bottom" title="Ameryka Północna – kontynent o powierzchni 24 230 000 km² (co stanowi 16,3% całkowitej powierzchni lądów na kuli ziemskiej), położony na półkulach: północnej i zachodniej. Do Ameryki Północnej należy również tzw. Ameryka Środkowa.">Ameryka Północna</a> 
+    i <a href="#" data-toggle="tooltip" data-placement="bottom" title="Ameryka Południowa – kontynent o powierzchni 17,8 milionów km² leżący na półkuli zachodniej oraz w większej części na półkuli południowej, a w mniejszej – na półkuli północnej. Niekiedy uważana jest również za subkontynent Ameryki.">Ameryka Południowa</a>. 
+    Rozciąga się na długości ponad 15 tysięcy km od Archipelagu Arktycznego po Ziemię Ognistą. Niekiedy na oznaczenie obu Ameryk używa się także określeń Nowy Świat lub półkula zachodnia.
+    Powierzchnia Ameryki wynosi 42,6 mln km², a zamieszkuje ją ponad 916 milionów ludzi, co stanowi 13% ludności świata.
+    Nazwę Ameryki zaproponował w 1507 roku niemiecki kartograf, pochodzący z Alzacji,
+    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Martin Waldseemüller (ur. ok. 1470-1475, zm. ok. 1518-1521) – niemiecki kosmograf, na którego mapie pojawia się Pacyfik zanim Vasco Núñez de Balboa dotarł nad jego wybrzeże[potrzebny przypis]. W dziele Cosmographiae introductio oraz na mapie Universalis Cosmographia z 1507 jako pierwszy użył określenia Ameryka dla nazwania niedawno odkrytego kontynentu na zachodzie.">Martin Waldseemüller</a>. Przypisywał on odkrycie Nowego Świata, jak wówczas określano nowo odkryty ląd, Amerigo Vespucciemu i na jego cześć nadał mu miano America. Istnieją także inne teorie na temat pochodzenia tej nazwy, ale nie zyskały one uznania. Jednym z najstarszych globusów, na którym pojawiła się nazwa Ameryka, jest Globus Jagielloński z 1508 roku.
+    W wielu krajach, m.in. w Polsce, nazwa Ameryka stosowana jest potocznie jako synonim Stanów Zjednoczonych Ameryki. Podobnie Amerykanin to obywatel Stanów Zjednoczonych (w Polsce jest to oficjalne określenie).
+</p>
+</div>
+    </div>
+  
+  <script>
+  $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+  });
+  </script>
+
+  </body>
+</html>
